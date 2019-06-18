@@ -1,5 +1,5 @@
 # jsonSortedStringify
-Custom version of JSON stringify that produces output sorted by object properties and array values.  This is useful when comparing (eg, via PatienceDiff) objects that have similar properties and array values, but not necessarily in the same order.
+Custom version of JSON stringify that produces output sorted by object properties and array values.  This is useful when comparing (eg, via PatienceDiff) objects that have similar properties and array values, but when using JSON.stringify arn't rendered in the same order.  Hence, reversing the results of jsonSortedStringify via JSON.parse is not recommended, as any arrays within the object will be sorted, potentially losing the original order which might have had meaning.
 
 # Interface
 
